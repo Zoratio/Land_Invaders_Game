@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("In ms")] [SerializeField] float xRange = 6.3f;    //keeps the ship within the bounderies of the screen
     [Tooltip("In ms^-1")] [SerializeField] float yControlSpeed = 11f;   //speed of which the ship moves in the x axis
     [Tooltip("In ms")] [SerializeField] float yRange = 3.3f;      //keeps the ship within the bounderies of the screen
+    [SerializeField] GameObject[] guns;
 
     [Header("Screen-position Based")]
     float positionPitchFactor = -5f;    //pitches angle of the ship to the camera (high up will be pitched down vise versa)
@@ -58,8 +59,10 @@ public class PlayerController : MonoBehaviour
         {
             YPositionMaxRangeCatch();
             XPositionMaxRangeCatch();
+            ProcessFiring();
         }
     }
+
 
     //FixedUpdate as working with physics
     void FixedUpdate()
@@ -73,7 +76,7 @@ public class PlayerController : MonoBehaviour
 
     void OnPlayerDeath()
     {
-        print("Player is dying");
+        isControlEnabled = false;   
     }
 
     //from update
@@ -270,4 +273,45 @@ public class PlayerController : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);   //new transform rotation using the above 3 axis (Quaternion.Eular for the correct order of rotation)
     }
+
+
+    void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire"))
+        {
+            //ActivateGuns();
+            Shooting(true);
+        }
+        else
+        {
+            Shooting(false);
+            //DeactivateGuns();
+        }
+    }
+
+    private void Shooting(bool firing) 
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(firing);    //only use 1 method that will set it to opposite of current 
+        }
+    }
+
+
+
+    /*private void ActivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(true);    //only use 1 method that will set it to opposite of current 
+        }
+    }
+
+    private void DeactivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
+    }*/
 }
