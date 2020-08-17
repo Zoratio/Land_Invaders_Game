@@ -293,7 +293,8 @@ public class PlayerController : MonoBehaviour
     {
         foreach (GameObject gun in guns)
         {
-            gun.SetActive(firing);    //only use 1 method that will set it to opposite of current 
+            var emissionModule = gun.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = firing;
         }
     }
 

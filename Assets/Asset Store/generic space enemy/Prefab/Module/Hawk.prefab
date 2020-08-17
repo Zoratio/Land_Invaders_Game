@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23021765208169616}
   - component: {fileID: 131724532}
   m_Layer: 0
-  m_Name: Ship_02
+  m_Name: Hawk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.79708534}
   m_LocalScale: {x: 20, y: 20, z: 20}
-  m_Children: []
+  m_Children:
+  - {fileID: 6104076149885817251}
+  - {fileID: 8324098896788698442}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -96,3 +98,129 @@ MonoBehaviour:
   parent: {fileID: 0}
   scorePerHit: 15
   hits: 12
+--- !u!1001 &6099568132531847581
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4354848751893472}
+    m_Modifications:
+    - target: {fileID: 1794955534813246, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_Name
+      value: Jet Particles Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.085
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.031
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.72433037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.029346105
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0052880747
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68880796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 93.47699
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -32.70398
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -35.511993
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+--- !u!4 &6104076149885817251 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 6099568132531847581}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8328615705003287924
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4354848751893472}
+    m_Modifications:
+    - target: {fileID: 1794955534813246, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_Name
+      value: Jet Particles Blue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.022
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.72433037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.029346105
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0052880747
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68880796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 93.47699
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -32.70398
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -35.511993
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ec641bcc452ff640b33d0f27cc022ed, type: 3}
+--- !u!4 &8324098896788698442 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4516848212791358, guid: 2ec641bcc452ff640b33d0f27cc022ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 8328615705003287924}
+  m_PrefabAsset: {fileID: 0}
