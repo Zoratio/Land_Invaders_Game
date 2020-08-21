@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33219907115598346}
   - component: {fileID: 23021765208169616}
   - component: {fileID: 131724532}
+  - component: {fileID: 7892175289118472157}
   m_Layer: 0
   m_Name: Hawk
   m_TagString: Untagged
@@ -97,7 +98,20 @@ MonoBehaviour:
   deathFX: {fileID: 4185264183158783478, guid: 5f138b09a9d282c4ba854fc1d5f60363, type: 3}
   parent: {fileID: 0}
   scorePerHit: 15
-  hits: 12
+  hits: 6
+--- !u!65 &7892175289118472157
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238095480485456}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6627084, y: 0.48463184, z: 0.1403246}
+  m_Center: {x: 0, y: 0, z: -0.0000000037252903}
 --- !u!1001 &6099568132531847581
 PrefabInstance:
   m_ObjectHideFlags: 0
