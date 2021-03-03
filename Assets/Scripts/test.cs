@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class test : MonoBehaviour
 {
+    //test script for rotation
     bool up;
     bool down;
 
