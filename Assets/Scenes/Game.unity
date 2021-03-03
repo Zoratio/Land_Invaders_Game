@@ -2975,6 +2975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65487027b96c79346b178c133f369361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
 --- !u!1 &949806133 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1074994750746910, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
@@ -3985,7 +3986,7 @@ PrefabInstance:
     - target: {fileID: 3762295830253140603, guid: ab385056dd668a5438729f000dc15a12,
         type: 3}
       propertyPath: m_Volume
-      value: 0.2
+      value: 0.13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab385056dd668a5438729f000dc15a12, type: 3}
